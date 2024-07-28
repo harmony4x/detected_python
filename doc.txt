@@ -1,0 +1,16 @@
+dataset/
+├── images/
+│   ├── train/    # chứa hình ảnh huấn luyện
+│   └── val/      # chứa hình ảnh kiểm tra
+└── labels/
+    ├── train/    # chứa file nhãn tương ứng với hình ảnh huấn luyện
+    └── val/      # chứa file nhãn tương ứng với hình ảnh kiểm tra
+
+- Tỉ lệ hình ảnh 80% - 20%
+
+- Tiền xử lý dữ liệu sử dụng file preprocess_images.py
+    + Resize ảnh về 640x640
+    + Thay tất cả đuôi file .webp và .png thành .jpg
+    + Lưu file vào images
+
+- Sử dụng create_empty_labels để gán nhãn rỗng cho thư mục non_fire_images
